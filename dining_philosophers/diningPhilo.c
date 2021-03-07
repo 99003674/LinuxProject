@@ -1,6 +1,4 @@
-#include <pthread.h> 
-#include <semaphore.h> 
-#include <stdio.h> 
+#include "diningPhilo.h"
 
 #define N 5 
 #define THINKING 2 
