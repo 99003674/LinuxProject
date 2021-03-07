@@ -23,8 +23,7 @@ void test(int phnum)
 
 		sleep(2); 
 
-		printf("Philosopher %d takes fork %d and %d\n", 
-					phnum + 1, LEFT + 1, phnum + 1); 
+		printf("Philosopher %d takes fork %d and %d\n", phnum + 1, LEFT + 1, phnum + 1); 
 
 		printf("Philosopher %d is Eating\n", phnum + 1); 
 
@@ -67,8 +66,7 @@ void put_fork(int phnum)
 	// state that thinking 
 	state[phnum] = THINKING; 
 
-	printf("Philosopher %d putting fork %d and %d down\n", 
-		phnum + 1, LEFT + 1, phnum + 1); 
+	printf("Philosopher %d putting fork %d and %d down\n", phnum + 1, LEFT + 1, phnum + 1); 
 	printf("Philosopher %d is thinking\n", phnum + 1); 
 
 	test(LEFT); 
@@ -110,8 +108,7 @@ int main()
 	for (i = 0; i < N; i++) { 
 
 		// create philosopher processes 
-		pthread_create(&thread_id[i], NULL, 
-					philospher, &phil[i]); 
+		pthread_create(&thread_id[i], NULL, philospher, &phil[i]); 
 
 		printf("Philosopher %d is thinking\n", i + 1); 
 	} 
