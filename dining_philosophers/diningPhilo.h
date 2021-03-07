@@ -5,9 +5,9 @@
 #include <semaphore.h> 
 #include <stdio.h> 
 
-void test(int phnum);
-void take_fork(int phnum) ;
-void put_fork(int phnum);
+void check(int phnum);
+void take_chopstick(int phnum) ;
+void put_chopstick(int phnum);
 void* philospher(void* num);
 
 
