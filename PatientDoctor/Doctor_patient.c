@@ -147,3 +147,25 @@ void* pat3(void* pv)
 int main()
 {
 
+	// Creating thread handles
+	pthread_t pt1;
+	pthread_t pt2;
+	pthread_t pt3;	   
+	sem_init(&s1,0,1);
+	sem_init(&s2,0,0);
+	sem_init(&s3,0,0);
+
+
+	// Creating threads
+	pthread_create(&pt1,NULL,pat1,NULL);
+	pthread_create(&pt2,NULL,pat2,NULL);
+	pthread_create(&pt3,NULL,pat3,NULL);
+	pthread_join(pt1,NULL);
+	pthread_join(pt2,NULL);
+	pthread_join(pt3,NULL);
+	sem_destroy(&s1);
+	sem_destroy(&s2);
+	sem_destroy(&s3);
+	pthread_mutex_destroy(&m1);
+	return 0;	          
+}
