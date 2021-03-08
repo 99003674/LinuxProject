@@ -1,3 +1,5 @@
+//header file//
+
 #ifndef __DININGPHILO_H__
 #define __DININGPHILO_H__
 
