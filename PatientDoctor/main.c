@@ -37,7 +37,7 @@ void Alert_Doctor()
 				} 
   
 			if (pid == 0)
-				{	                            //child
+				{	                    //child
 				signal(SIGHUP, sighup); 
 				signal(SIGINT, sigint); 
 				signal(SIGQUIT, sigquit); 
@@ -188,7 +188,7 @@ void* patient4(void* pv)
 
 int main()
 {
-	pthread_t pt1,pt2,pt3,pt4;	//thread handle
+	pthread_t pt1,pt2,pt3,pt4;	   //thread handle
 	sem_init(&s1,0,1);
 	sem_init(&s2,0,0);
 	sem_init(&s3,0,0);
@@ -213,6 +213,6 @@ int main()
 	printf("Thank you for the visit\n");
 	
 	
-	return 0;	//exit(0);
+	return 0;	                 //exit(0);
 }
 
