@@ -10,6 +10,4 @@ void take_chopstick(int phnum) ;
 void put_chopstick(int phnum);
 void* philospher(void* num);
 
-
-
 #endif
