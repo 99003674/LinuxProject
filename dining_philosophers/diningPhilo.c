@@ -1,3 +1,4 @@
+//header file for dining philosophers
 #include "diningPhilo.h"
 
 #define NUMBER 5 
