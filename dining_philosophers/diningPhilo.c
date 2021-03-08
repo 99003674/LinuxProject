@@ -8,7 +8,7 @@
 #define EAT 0 
 
 int state[NUMBER]; 
-int philosophers[NUMBER] = { 0, 1, 2, 3, 4 }; 
+int philosophers[NUMBER] = { 0,1,2,3,4 }; 
 
 sem_t mutex; 
 sem_t S[NUMBER]; 
