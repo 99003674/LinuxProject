@@ -78,6 +78,7 @@ int Check_the_Vitals( int Breathing_rate, int Heart_beat)    // function for che
 		
 
    
+
 void sighup() 
   
 { 
