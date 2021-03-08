@@ -1,3 +1,5 @@
+#include"Patientdoctor.h"
+
 int NumDR, NumPatient, WRSize; 	
  volatile int SleepingDR = 0;		
  volatile int ReceptionDone = 0;	
