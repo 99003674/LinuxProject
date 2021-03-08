@@ -1,5 +1,12 @@
-Build: PatientDoctor.c
-	gcc PatientDoctor.c -lpthread 
+SRC = *.c
 
-run:Build
+#INC = *.h
+
+all: $(SRC)
+	gcc $(SRC) -o a.out -lpthread 
+
+run:
 	./a.out
+
+clean:
+	rm -rf *.out *.o
