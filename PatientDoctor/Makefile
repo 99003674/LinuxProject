@@ -1,4 +1,4 @@
-SBuild: PatientDoctor.c
+Build: PatientDoctor.c
 	gcc PatientDoctor.c -lpthread 
 
 run:Build
